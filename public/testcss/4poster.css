@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    background: url();
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+@media(max-width:998rem){
+    html{
+        font-size:55%;
+    }
+}
+    
+@media(max-width:768rem){
+    html{
+        fontsize:45%;
+    }
+}
+.up{
+    padding-top: 10rem;
+}
+body{
+    background: linear-gradient(121deg, rgba(82,228,100,1) 0%, rgba(6,85,218,1) 100%);;
+    background-size: cover;
+}
+.regform{
+    width:100rem;
+    background-color:rgb(0,0,0,0.6);
+    margin:auto;
+    color: white;
+    padding-top: 8rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    height: 10rem;
+    font-family: Comic Sans MS;
+    font-size: 3rem;
+}
+.main{
+    background-color: rgb(0,0,0,0.4);
+    width: 100rem;
+    margin: auto;   
+}
+form{
+    padding: 10px;
+}
+#name{
+    width: 100%;
+    height: 10rem;
+}
+.name{
+    margin-left:2.5rem;
+    margin-top:0rem;
+    width: 12.5rem;
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: 2rem;
+    font-weight: 5rem;
+}
+input{
+    background-color: whitesmoke;
+    color: black;
+    border:1rem;
+}
+h2{
+    padding-top: 5rem;
+}
+.pass{
+    position: relative;
+    left: 20rem;
+    top: -4rem;
+    line-height: 5rem;
+    border-radius: 2rem;
+    padding: 0rem 2.2rem;
+    font-size: 2rem;
+    color:black;
+    font-family: cursive;
+}
+button{
+    width: 15rem;
+    height: 5rem;
+    margin-top: -9rem;
+    margin-left: 70rem;
+    border: 0.2prem solid grey;
+    font-size: 2rem;
+    font-weight: bold;
+    background: white;
+    border-radius: 2rem;
+    color: rgb(255, 64, 16);
+    cursor:pointer;
+    border: 2rem;
+}
+button:hover{
+    background: rgb(255, 50, 22);
+    border: rgb(0, 0, 0);
+    transition: all 0.5s linear;
+    text-align: uppercase;
+    color: blanchedalmond;
+}

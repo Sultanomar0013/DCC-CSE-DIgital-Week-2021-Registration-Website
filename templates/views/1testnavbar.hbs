@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>Navbar</title>
+        <link rel="stylesheet" type="text/css" href="../testcss/1testnav.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header class="sticky">
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png" alt="Logo">
+            </div>
+            <div class="bar">
+               
+                    <ul>
+                        <li><a class="a" href="#home">Home</a></li>
+                        <li><a class="a" href="#about">About</a></li>
+                        <li><a class="a" href="#schedule">Schedule</a></li>
+                        <li><a class="a" href="#organizers">Organizers</a></li>
+                        <li><a class="a" href="#gallery">Gallery</a></li>
+                        <li><a class="a" href="#contacts">Contacts</a></li>
+                        <a href="2registration"><li class="btn-1"><button class="btn">Registration</button></li></a>
+                        
+                    </ul>
+            </div>
+                </nav>
+      </header>     <!--home section-->
+                    <div id="home" class="homeslide">
+                        <div class="homeImage"></div>
+                        <div class="DDW">
+                            <h1 class="blue">DCC CSE</h1>
+                            <h1 class="red">Digital WEEK 2021</h1>
+                        </div>
+
+                             <div class="count">
+                            
+
+                            <!--Count down clock code-->
+                            <h1></h1> 
+                            <div id="clockdiv"> 
+                              <div> 
+                                <span class="days" id="day"></span> 
+                                <div class="smalltext">Days</div> 
+                              </div> 
+                              <div> 
+                                <span class="hours" id="hour"></span> 
+                                <div class="smalltext">Hours</div> 
+                              </div> 
+                              <div> 
+                                <span class="minutes" id="minute"></span> 
+                                <div class="smalltext">Minutes</div> 
+                              </div> 
+                              <div> 
+                                <span class="seconds" id="second"></span> 
+                                <div class="smalltext">Seconds</div> 
+                              </div> 
+                            </div> 
+                              
+                            <p font-size=7 id="demo"></p> 
+                              
+                            <script> 
+                              
+                            var deadline = new Date("Dec 28, 2021 00:00:00").getTime(); 
+                              
+                            var x = setInterval(function() { 
+                              
+                            var now = new Date().getTime(); 
+                            var t = deadline - now; 
+                            var days = Math.floor(t / (1000*60*60*24)); 
+                            var hours = Math.floor((t%(1000*60*60*24))/(1000 * 60 * 60)); 
+                            var minutes = Math.floor((t%(1000*60*60)) / (1000 * 60)); 
+                            var seconds = Math.floor((t%(1000*60)) / 1000); 
+                            document.getElementById("day").innerHTML =days ; 
+                            document.getElementById("hour").innerHTML =hours; 
+                            document.getElementById("minute").innerHTML = minutes;  
+                            document.getElementById("second").innerHTML =seconds;  
+                            if (t < 0) { 
+                                    clearInterval(x); 
+                                    document.getElementById("demo").innerHTML = "TIME UP"; 
+                                    document.getElementById("day").innerHTML ='0'; 
+                                    document.getElementById("hour").innerHTML ='0'; 
+                                    document.getElementById("minute").innerHTML ='0' ;  
+                                    document.getElementById("second").innerHTML = '0'; } 
+                            }, 1000); 
+                            </script> 
+
+
+
+                        <!--countdown finish-->
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="border1"></div>
+                   
+                   <!--about section-->
+                    <div id="about">
+                        <div class="about">
+                            <h1>About</h1>
+                        </div>
+                        <h3>The DCC CSE digital week is an annual digital campaign run at the Department of Computer Science and Engineering, DHAKA CITY COLLEGE. 
+Each year we celebrate some events focused on interactive tech learning opportunities. 
+Students, Teachers, Volunteers, Organizers all enjoy the events throughout the department. 
+An initiative of DCC CSE UNITED, the events highlight innovation, programming, designing ideas, and more competitions.
+You can get involved too!</h3>
+                    </div>
+                    <div class="border2"></div>
+                   
+                   <!--schedule section-->
+                    <div id="schedule">
+                        <div class="sche">
+                            <h1>Schedule</h1>
+                        </div >
+                        <div class="box">
+                                <h2>BANNER DESIGN</h2>
+                                <p>Tuesday, 28th December 2021</p>
+                                <a href="3bannerdesign"><button class="regBtn">Event Register</button></a>
+                                
+
+                                <h2>IDEA SUBMISSION</h2>
+                                <P>Wednesday, 29th December 2021</P>
+                                <a href="4IdeaSubmission"><button class="regBtn">Event Register</button></a>
+                                
+                                <h2>Website Design</h2>
+                                <P>Thursday, 30th Decembar 2021</P>
+                                <a href="5WebsiteDesign"><button class="regBtn">Event Register</button></a>
+
+                                <h2>PROGRAMMING OLYMPIAD</h2>
+                                <P>Sunday, 2th January 2022</P>
+                                <a href="6ProgrammingOlympiad"><button class="regBtn">Event Register</button></a>
+                                
+                                <h2>POSTER PRESENTATION</h2>
+                                <P>Sunday, 2th January 2022</P>
+                                <a href="7posterpresentation"><button class="regBtn">Event Register</button></a>
+                                
+                                <h2>PROGRAMMING CONTEST MOCK</h2>
+                                <P>Sunday, 2th January 2022</P>
+                                
+                                
+                                <h2>PROGRAMMIN CONTEST</h2>
+                                <P>Monday, 3th January 2022</P>
+                                
+                                
+                                <!--<h2>PRIZE GIVING CERAMONY</h2>
+                                <P>Monday, 3th January 2022</P>-->
+                                
+                        </div>
+                    </div>
+                    <div class="border3"></div>
+                    <!--organizers section-->
+                    <div id="organizers"></div>
+                    <div class="border4"></div>
+                    <!--gallery section-->
+                    <div id="gallery"></div>
+                    <div class="border5"></div>
+                    <!--contact section-->
+                    <div id="contacts"></div>
+                </div>
+        </body>
+</html>

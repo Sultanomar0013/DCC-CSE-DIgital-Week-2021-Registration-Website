@@ -1,0 +1,610 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    background: url();
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+
+
+/*this is navbar section*/
+nav
+{   width: 100%;
+    height: 11rem;
+    overflow: auto;
+    background: linear-gradient(0deg, rgba(0,0,0,0.41780462184873945) 0%, rgba(0,0,0,0.4234068627450981) 100%);
+    padding-top: 0rem;
+    position: fixed;
+}
+
+nav ul
+{   
+    padding-left: 5rem;
+    margin: 0 0 0 35rem;
+    list-style:none;
+}
+
+nav ul li
+{
+    float: left;
+    margin-top: .5rem;
+}
+nav ul li a.a
+{   
+    width: 6rem;
+    display: inline-block;
+    padding: 4rem 3rem;
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+nav ul li a.a:hover{
+    background: none;
+    border-radius: 0rem;
+    color: rgb(255, 50, 50);
+    transition: all 1s linear;
+    font: uppercase;
+}
+.logo img
+{
+    position: absolute;
+    margin-top: 0rem;
+    margin-left: 2rem;
+}
+.btn-1
+{
+    padding-left: 4rem;
+    padding-top: 2.5rem;
+}
+ 
+.btn 
+{
+    padding: 0rem 0.8rem;
+    border: 0.2prem solid grey;
+    font-family: 'Fira Sans Condensed', sans-serif;;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    background: white;
+    color: rgb(255, 81, 37);
+    cursor:pointer;
+}
+button{
+    width: 15rem;
+    height: 6rem;
+    
+}
+li button:hover{
+    background: rgb(255, 56, 21);
+    border: rgb(0, 0, 0);
+    transition: all 0.5s linear;
+    text-align: uppercase;
+    color: blanchedalmond;
+}
+/*this is home section*/
+#home{
+    display: inline-block;
+    width: 100%;
+    height: 110vh;
+    animation: animate 20s ease-in-out infinite;
+    background-size: cover;
+}
+@keyframes animate{
+    0%,100%{
+        background-image: url(../images/1.jpg);
+    }
+    20%{
+        background-image: url(../images/2.jpg);
+    }
+    40%{
+        background-image: url(../images/3.jpg);
+    }
+    60%{
+        background-image: url(../images/4.jpg);
+    }
+    80%{
+        background-image: url(../images/5.jpg);
+    }
+    /*71.42%{
+        background-image: url(../images/6.jpg);
+    }
+    85.71%{
+        background-image: url(../images/8.jpg);
+    }*/
+}
+#home .DDW{
+    display: inline-block;
+    padding-left: 5rem;
+    padding-top: 50rem;
+    font-size: 5rem;
+    font-family:'Fira Sans Condensed', sans-serif;;
+}
+
+.DDW h1{   
+    font-family: 'Fira Sans Condensed', sans-serif;;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    
+}
+
+.DDW h1.blue{
+    color:rgb(0, 230, 180);
+}
+.DDW h1.red{
+    color:rgb(0, 183, 255);
+}
+div.border1{
+    display: inline-block;
+    width:100%;
+    height: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0rem;
+    margin-bottom:0rem;
+    background-color: black;
+}
+/*this is about section*/
+#about {
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(121deg, rgba(82,228,100,1) 0%, rgba(6,85,218,1) 100%);
+}
+.about h1{
+    color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 7rem;
+    padding-left:60rem;
+    padding-top: 10rem;
+}
+#about h3{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: justify;
+    color: antiquewhite;
+    padding-top: 5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+div.border2{
+    display: inline-block;
+    width:100%;
+    height: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0rem;
+    margin-bottom:0rem;
+    background-color: black;
+}
+/*this is schedule section*/
+#schedule{
+    display: inline-block;
+    width:100%;
+    height: 225vh;
+    background: linear-gradient(121deg, rgba(82,228,100,1) 0%, rgba(6,85,218,1) 100%);
+}
+.sche h1{
+    color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;;
+    font-size: 7rem;
+    padding-left: 60rem;
+    padding-top: 10rem;
+}
+.box h2{
+    font-family: 'Fira Sans Condensed', sans-serif;;
+    color:white;
+    padding-left: 7rem;
+    padding-top: 3rem;
+    font-size: 3rem;
+}
+.box p{
+    font-family:  'Fira Sans Condensed', sans-serif;;
+    color:white;
+    padding-left: 7rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+.regbtn{
+        margin-left: 7rem;
+        margin-top: 2rem;
+        padding: 0rem 0.8rem;
+        border: 0.2prem solid grey;
+        font-size: 1.8rem;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        font-weight: bold;
+        border-radius: 2rem;
+        background: white;
+        color: black;
+        cursor:pointer;
+}
+.regbtn:hover{
+    background: rgb(255, 39, 39);
+    border: rgb(0, 0, 0);
+    transition: all 0.5s linear;
+    text-align: uppercase;
+    color: blanchedalmond;
+}
+
+
+div.border3{
+    display: inline-block;
+    width:100%;
+    height: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0rem;
+    margin-bottom:0rem;
+    background-color: black;
+}
+
+
+#organizers{
+
+}
+#gallery{
+
+}
+div.border5{
+    display: inline-block;
+    width:100%;
+    height: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0rem;
+    margin-bottom:0rem;
+    background-color: black;
+}
+#contacts{
+
+}
+
+
+
+
+/*countdown code*/
+ 
+div .count{ 
+    padding-top: 11rem;
+    float: right;
+    text-align: right; 
+  font-family: sans-serif; 
+  font-weight: 3rem; 
+} 
+ #clockdiv{ 
+    font-family: sans-serif; 
+    color: #fff; 
+    display: inline-block; 
+    font-weight: 100; 
+    text-align: center; 
+    font-size: 3rem; 
+} 
+#clockdiv > div{ 
+    padding: 1rem; 
+    border-radius: 1rem; 
+    background: #00BF96; 
+    display: inline-block; 
+} 
+#clockdiv div > span{ 
+    padding: 1.5rem; 
+    border-radius: 1rem; 
+    background: #00816A; 
+    display: inline-block; 
+} 
+div .smalltext{ 
+    padding-top: 0.5rem; 
+    font-size: 1.6rem; 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*making responsive*/
+@media(max-width:1310px){
+    html{
+        font-size: 45%;
+    }
+    nav
+    {   width: 100%;
+        height: 17rem;
+    }
+    nav ul{
+        padding-left: 7rem;
+        margin: 13 0 0 35rem;
+    }
+    div .count{
+        padding-top: 17rem;
+    }
+    
+    #home{
+        width: 100%;
+    }
+    #home .DDW{
+        padding-left: 5rem;
+        padding-top: 60rem;
+    }
+  
+
+ 
+    #about {
+        width: 100%;
+    }
+    #schedule{
+        width: 100%;
+    }
+    div.border1{
+        width: 100%;
+    }
+    div.border2{
+        width: 100%;
+    }  
+    div.border3{
+        width: 100%;
+    }   
+    div.border4{
+        width: 100%;
+    }   
+    div.border5{
+        width: 100%;
+    }
+}
+
+@media(max-width:1024px){
+    html{
+        font-size: 35%;
+    }
+    nav
+    {   width: 100%;
+        height: 17rem;
+    }
+    nav ul{
+        padding-left: 5rem;
+        margin: 13 0 0 17rem;
+    }
+    div .count{
+        padding-top: ;
+    }
+    #home{
+        width: 100%;
+    }
+    #home .DDW{
+        padding-left: 5rem;
+        padding-top: 80rem;
+    }
+  
+
+ 
+    #about {
+        width: 100%;
+    }
+    #schedule{
+        width: 100%;
+    }
+    div.border1{
+        width:100%;
+    }
+    div.border2{
+        width: 100%;
+    }  
+    div.border3{
+        width: 100%;
+    }   
+    div.border4{
+        width: 100%;
+    }   
+    div.border5{
+        width: 100%;
+    }
+}
+
+
+
+@media(max-width:768px){
+    html{
+        font-size: 30%;
+    }
+    nav
+    {   width: 100%;
+        height: 25rem;
+    }
+    nav ul{
+        padding-left: 5rem;
+        margin: 23 0 0 17rem;
+    }
+    div .count{
+        padding-top: 25rem ;
+    #home{
+        width: 100%;
+    }
+    #home .DDW{
+        padding-left: 5rem;
+        padding-top: 100rem;
+    }
+
+ 
+    #about {
+        width: 100%;
+    }
+    #schedule{
+        width: 100%;
+    }
+    div.border1{
+        width: 100%;
+    }
+    div.border2{
+        width: 100%;
+    }  
+    div.border3{
+        width:100%;
+    }   
+    div.border4{
+        width: 100%;
+    }   
+    div.border5{
+        width: 100%;
+    }
+    
+   
+}
+
+@media(max-width:468px){
+    html{
+        font-size: 25%;
+    }
+    nav
+    {   width: 100%;
+        height: 13rem;
+    }
+    nav ul{
+        padding-left: 0rem;
+        margin: 0 0 0 0rem;
+    }
+    .logo img{
+        display: none;    
+    }
+    #home{
+        width: 100%;
+    }
+    #home .DDW{
+        padding-left: 5rem;
+        padding-top: 100rem;
+    }
+
+ 
+    #about {
+        width: 100%;
+    }
+    #schedule{
+        width: 100%;
+    }
+    div.border1{
+        width: 100%;
+    }
+    div.border2{
+        width: 100%;
+    }  
+    div.border3{
+        width: 100%;
+    }   
+    div.border4{
+        width: 100%;
+    }   
+    div.border5{
+        width: 100%;
+    }
+    
+   
+}
+@media(max-width:370px){
+    html{
+        font-size: 25%;
+    }
+    nav
+    {   width: 100%;
+        height: 13rem;
+    }
+    nav ul{
+        padding-left: 0rem;
+        margin: 0 0 0 0rem;
+    }
+    .logo img{
+        display: none;    
+    }
+    #home{
+        width: 100%;
+    }
+    #home .DDW{
+        padding-left: 5rem;
+        padding-top: 100rem;
+    }
+
+ 
+    #about {
+        width: 100%;
+    }
+    #schedule{
+        width: 100%;
+    }
+    div.border1{
+        width: 100%;
+    }
+    div.border2{
+        width: 100%;
+    }  
+    div.border3{
+        width: 100%;
+    }   
+    div.border4{
+        width: 100%;
+    }   
+    div.border5{
+        width: 100%;
+    }   
+}
+
+@media(max-width:320px){
+    html{
+        font-size: 25%;
+    }
+    nav
+    {   width: 100%;
+        height: 13rem;
+    }
+    nav ul{
+        padding-left: 0rem;
+        margin: 0 0 0 0rem;
+    }
+    .logo img{
+        display: none;    
+    }
+    #home{
+        width: 100%;
+    }
+    #home .DDW{
+        padding-left: 5rem;
+        padding-top: 100rem;
+    }
+
+ 
+    #about {
+        width: 100%;
+    }
+    #schedule{
+        width: 100%;
+    }
+    div.border1{
+        width: 100%;
+    }
+    div.border2{
+        width: 100%;
+    }  
+    div.border3{
+        width: 100%;
+    }   
+    div.border4{
+        width: 100%;
+    }   
+    div.border5{
+        width: 100%;
+    }   
+}
+
